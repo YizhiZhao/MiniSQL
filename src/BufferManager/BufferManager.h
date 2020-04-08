@@ -26,7 +26,7 @@ public:
 private:
     fileNode *fileHead;
     blockNode *block_pool;
-    int used_block; // the number of block that have been used, which means the block is in the list.
+    int used_block; // the number of block that have been used,  which means the block is in the list.
     void init_block(blockNode &block);
     void init_file(fileNode &file);
     blockNode* get_Block(fileNode * file, blockNode* position, bool if_pin = false);

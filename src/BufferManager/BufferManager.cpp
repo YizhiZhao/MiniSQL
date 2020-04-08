@@ -204,11 +204,11 @@ blockNode* BufferManager::get_Block(fileNode *file, blockNode *position, bool if
         }
     }
 
-    //if there are not enough node for block, we need use LRU to replace one block
+    //if there are not enough node for block, we need use LFU to replace one block
     //and write back the replaced block node into disk
     else
     {
-        int min_reference = block_pool[0].reference;//using LUR to find the block node with the minimum reference
+        int min_reference = block_pool[0].reference;//using LFU  to find the block node with the minimum reference
         int max_reference = block_pool[0].reference;
         for(int i = 0; i < used_block; i++)
         {

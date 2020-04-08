@@ -17,7 +17,7 @@ private:
     char *address; // the content address
     blockNode * preBlock;
     blockNode * nextBlock;
-    bool reference; // the LRU replacement flag
+    int reference; // the LRU replacement flag
     bool dirty; // the flag that this block is dirty, which needs to written back to the disk later
     size_t using_size; // the byte size that the block have used. The total size of the block is BLOCK_SIZE . This value is stored in the block head.
 
