@@ -27,4 +27,4 @@ make minisql
 
 #### Design diagram
 
-![](.\image\diagram.png)
+![](./image/diagram.png)
